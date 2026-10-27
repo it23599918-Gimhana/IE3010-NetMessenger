@@ -1,0 +1,94 @@
+IT23599918 NetMessenger Testing
+
+SERVER
+------
+
+./server_9918
+
+
+CLIENT 1
+--------
+
+./client_9918
+
+REGISTER seneth
+
+
+CLIENT 2
+--------
+
+./client_9918
+
+REGISTER suba
+
+
+LIST USERS
+----------
+
+LIST
+
+
+BROADCAST
+---------
+
+BCAST Hello everyone
+
+
+PRIVATE MESSAGE
+---------------
+
+PMSG suba Hello Suba
+
+
+CREATE / JOIN ROOM
+------------------
+
+JOIN History
+
+
+LIST ROOMS
+----------
+
+ROOMS
+
+
+ROOM MESSAGE
+------------
+
+RMSG History Hello History room
+
+
+LEAVE ROOM
+----------
+
+LEAVE History
+
+
+INVALID USER TEST
+-----------------
+
+PMSG nobody Hello
+
+
+INVALID ROOM
+------------
+
+RMSG UnknownRoom Hello
+
+
+QUIT
+----
+
+QUIT
+
+
+PORT PROOF
+----------
+
+ss -tlnp | grep 15918
+
+
+LOG
+---
+
+cat netmsg_IT23599918.log

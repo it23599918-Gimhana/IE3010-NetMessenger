@@ -1,0 +1,19 @@
+CC = gcc
+
+CFLAGS = -std=c11 -Wall -Wextra -Wpedantic -pthread
+
+SERVER = server_9918
+CLIENT = client_9918
+
+all: $(SERVER) $(CLIENT)
+
+$(SERVER): server_9918.c
+	$(CC) $(CFLAGS) server_9918.c -o $(SERVER)
+
+$(CLIENT): client_9918.c
+	$(CC) $(CFLAGS) client_9918.c -o $(CLIENT)
+
+clean:
+	rm -f $(SERVER) $(CLIENT)
+
+.PHONY: all clean
