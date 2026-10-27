@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 set -e
@@ -1653,3 +1654,7 @@ echo "Testing commands:"
 echo
 echo "cat TEST_COMMANDS.txt"
 echo
+# Setup script for the IE3010 NetMessenger project
+# Checks the personalized configuration and prepares the project files.
+# Run this script from the project directory using: bash setup.sh
+
