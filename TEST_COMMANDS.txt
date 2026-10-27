@@ -92,3 +92,9 @@ LOG
 ---
 
 cat netmsg_IT23599918.log
+TESTING NOTES
+-------------
+1. Start the server before starting the clients.
+2. Register each client with a username.
+3. Test messaging between two connected clients.
+4. Check the server and client output for errors.
